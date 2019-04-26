@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane alignment="center" hgap="10" style="-fx-background-color: beige" vgap="10" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Pacman.ViewController">
+    <GridPane maxHeight="420.0" maxWidth="630.0" minHeight="420.0" minWidth="630.0" prefHeight="420.0" prefWidth="630.0" GridPane.columnIndex="0" />
+    <GridPane GridPane.columnIndex="1">
+        <Button minHeight="50" onMouseClicked="#showHighScores" text="High Scores" />
+        <HBox GridPane.rowIndex="1">
+            <Label text="Level : " />
+            <Label id="level" text="${controller.level}" />
+        </HBox>
+        <HBox GridPane.rowIndex="2">
+            <Label text="Lifes : " />
+            <Label text="${controller.lifeCount}" />
+        </HBox>
+        <HBox GridPane.rowIndex="3">
+            <Label text="Points : " />
+            <Label text="${controller.points}" />
+        </HBox>
+        <HBox GridPane.rowIndex="4">
+            <Label text="Bow Time : " />
+            <Label text="${controller.arrow}" />
+        </HBox>
+      <columnConstraints>
+         <ColumnConstraints />
+      </columnConstraints>
+      <rowConstraints>
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+      </rowConstraints>
+    </GridPane>
+    <stylesheets>
+        <URL value="@fontsize.css" />
+    </stylesheets>
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>
